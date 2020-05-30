@@ -1,0 +1,27 @@
+{
+  "name": "koreanaTrip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files . && npm run sass",
+    "sass": "node-sass -w public/sass/styles.scss -o public/styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pachopa/koreana-trip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pachopa/koreana-trip/issues"
+  },
+  "homepage": "https://github.com/pachopa/koreana-trip#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1"
+  }
+}
