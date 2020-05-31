@@ -1,0 +1,19 @@
+.navbar-toggle {
+  background-color: blue; }
+
+.container-fluid {
+  background-color: white; }
+  .container-fluid .logo {
+    width: 120px;
+    height: 120px; }
+
+@media (min-width: 768px) {
+  #navbarMainMenu {
+    display: flex !important;
+    height: 120px !important;
+    align-items: center; }
+  .container-fluid {
+    display: flex; }
+    .container-fluid .navbar-header {
+      display: flex;
+      align-items: center; } }

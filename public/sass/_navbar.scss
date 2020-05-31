@@ -1,0 +1,27 @@
+.navbar-toggle {
+  background-color: blue;
+}
+
+.container-fluid {
+  background-color: white;
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  #navbarMainMenu {
+    display: flex!important;
+    height: 120px!important;
+    align-items: center;
+  }
+  .container-fluid {
+    display: flex;
+    .navbar-header {
+      display: flex;
+      align-items: center;
+    
+    }
+  }
+}

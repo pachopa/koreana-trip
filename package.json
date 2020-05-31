@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server --files . && npm run sass",
-    "sass": "node-sass -w public/sass/styles.scss -o public/styles",
+    "start": "npm run sass && npm run sync",
+    "sync": "browser-sync start --server --files .",
+    "sass": "node-sass -w public/sass/ -o public/styles",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
   "dependencies": {
     "browser-sync": "^2.26.7",
     "live-server": "^1.2.1",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
   }
 }
