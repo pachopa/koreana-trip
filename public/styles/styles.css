@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+.navbar
 .navbar-toggle {
   background-color: blue; }
 
@@ -6,6 +8,8 @@
   .container-fluid .logo {
     width: 120px;
     height: 120px; }
+  .container-fluid .welcomeMsg {
+    display: none; }
 
 @media (min-width: 768px) {
   #navbarMainMenu {
@@ -16,4 +20,26 @@
     display: flex; }
     .container-fluid .navbar-header {
       display: flex;
-      align-items: center; } }
+      align-items: center; }
+    .container-fluid .welcomeMsg {
+      display: block;
+      padding: 15px;
+      line-height: 1.5;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee; }
+    .container-fluid ul li a {
+      color: #333;
+      font-size: 15px; }
+  .galleryImg .imgSlide {
+    height: 650px; }
+    .galleryImg .imgSlide .carousel-caption {
+      top: 15em; }
+      .galleryImg .imgSlide .carousel-caption h1 {
+        font-size: 150px;
+        font-family: 'Dancing Script', cursive; }
+  .page-footer {
+    background-color: #212529; }
+    .page-footer .footer-copyright {
+      color: white; } }

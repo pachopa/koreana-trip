@@ -1,3 +1,5 @@
+.navbar
+
 .navbar-toggle {
   background-color: blue;
 }
@@ -8,20 +10,55 @@
     width: 120px;
     height: 120px;
   }
+  .welcomeMsg {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   #navbarMainMenu {
-    display: flex!important;
-    height: 120px!important;
+    display: flex !important;
+    height: 120px !important;
     align-items: center;
+    
   }
   .container-fluid {
     display: flex;
     .navbar-header {
       display: flex;
       align-items: center;
+    }
+    .welcomeMsg {
+      display: block;
+      padding: 15px;
+      line-height: 1.5;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee;
+    }
+    ul li a {
+      color: #333;
+      font-size: 15px;
+    }
+  }
+  .galleryImg {
+    .imgSlide {
+      height: 650px;
+      .carousel-caption {
+        top: 15em;
+        h1 {
+          font-size: 150px;
+          font-family: 'Dancing Script', cursive;
+        }
+      }
+    }
+  }
+  .page-footer {
     
+    background-color: #212529;
+    .footer-copyright {
+      color: white;
     }
   }
 }
