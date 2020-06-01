@@ -64,7 +64,7 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol> -->
 
- 
+
 
     </div>
   </div>
@@ -74,59 +74,60 @@
 
         <div class="col-md-6">
           <img alt="Brand" src="img/airplane.jpg" class="formPic" />
-          
+
         </div>
         <div class="col-md-5">
-          <form class="needs-validation" novalidate>
-            <div class="form-row">
+          <!-- <form method="get" action="bouncer.php" class="needs-validation" novalidate> -->
+          <form method="get" action="bouncer.php">
+            <div class="form-row inputRow">
               <div class="col-md-4 mb-3 md-form">
-                <label for="validationCustom012">First name</label>
-                <input type="text" class="form-control" id="validationCustom012" placeholder="First name" value=""
-                  required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
+                <label for="fName">First name</label>
+                <input type="text" name="fName" class="form-control" placeholder="First name" required>
+                <div class="feedback">Type at least 2 characters</div>
               </div>
               <div class="col-md-4 mb-3 md-form">
-                <label for="validationCustom022">Last name</label>
-                <input type="text" class="form-control" id="validationCustom022" value="" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
+                <label for="lName">Last name</label>
+                <input type="text" class="form-control" name="lName" required>
+                <div class="feedback">Type at least 2 characters</div>
               </div>
               <div class="col-md-4 mb-3 md-form">
-                <label for="validationCustomUsername2">Username</label>
-                <input type="text" class="form-control" id="validationCustomUsername2"
-                  aria-describedby="inputGroupPrepend2" required>
-                <div class="invalid-feedback">
-                  Please choose a username.
-                </div>
+                <label for="userName">Username</label>
+                <input type="text" class="form-control" name="userName" aria-describedby="inputGroupPrepend2" required>
+                <div class="feedback">Type at least 2 characters</div>
               </div>
+
             </div>
-            <div class="form-row">
+            <div class="form-row inputRow">
+              <div class="col-md-6 mb-5 md-form">
+                <label for="pwd">Password</label>
+                <input type="text" name="pwd" class="form-control" placeholder="Password" required>
+                <div class="feedback">Type at least 2 characters</div>
+              </div>
+              <div class="col-md-6 mb-5 md-form">
+                <label for="email">Email </label>
+                <input type="text" class="form-control" name="email" placeholder=Email required>
+                <div class="feedback">Type at least 2 characters</div>
+              </div>
+
+            </div>
+            <div class="form-row inputRow">
               <div class="col-md-6 mb-3 md-form">
-                <label for="validationCustom032">City</label>
-                <input type="text" class="form-control" id="validationCustom032" required>
-                <div class="invalid-feedback">
-                  Please provide a valid city.
-                </div>
+                <label for="city">City</label>
+                <input type="text" class="form-control" name="city" required>
+                <div class="feedback">Type a valid city name</div>
               </div>
               <div class="col-md-3 mb-3 md-form">
-                <label for="validationCustom042">State</label>
-                <input type="text" class="form-control" id="validationCustom042" required>
-                <div class="invalid-feedback">
-                  Please provide a valid state.
-                </div>
+                <label for="state">State</label>
+                <input type="text" class="form-control" name="state" required>
+                <div class="feedback">Type a valid state</div>
               </div>
               <div class="col-md-3 mb-3 md-form">
-                <label for="validationCustom052">Zip</label>
-                <input type="text" class="form-control" id="validationCustom052" required>
-                <div class="invalid-feedback">
-                  Please provide a valid zip.
-                </div>
+                <label for="postalCode">Postal Code</label>
+                <input id="postalCode" type="text" class="form-control" name="postalCode" required>
+                <!-- <div class="feedback">Type a valid postal code</div> -->
               </div>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <div class="form-check pl-0">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                 <label class="form-check-label" for="invalidCheck2">
@@ -136,8 +137,17 @@
                   You must agree before submitting.
                 </div>
               </div>
+            </div> -->
+            <div class="buttonArea">
+              <input onclick="return confirmMsg()" type="reset" value="reset" />
+              <input onclick="return confirmMsg()" type="submit" value="submit" />
             </div>
-            <button class="btn btn-primary btn-sm btn-rounded" type="submit">Submit form</button>
+
+
+            <!-- <button id="resetButton" onclick="return confirm('check')" class="btn btn-danger regButton"
+              type="reset">Reset</button>
+            <button id="submitButton" onclick="confirmMsg(this.id)" class="btn btn-primary btn-sm btn-rounded regButton"
+              type="submit">Submit form</button> -->
           </form>
         </div>
       </div>
@@ -160,11 +170,13 @@
   </footer>
   <!-- Footer -->
 
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="public/src/app.js"></script>
+
 </body>
 
 </html>
