@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/pachopa/koreana-trip#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "browser-sync": "^2.26.7",
     "live-server": "^1.2.1",
     "node-sass": "^4.14.1",

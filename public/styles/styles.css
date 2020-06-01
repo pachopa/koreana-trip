@@ -43,3 +43,24 @@
     background-color: #212529; }
     .page-footer .footer-copyright {
       color: white; } }
+
+@media (min-width: 768px) {
+  .contactInfo {
+    text-align: left;
+    padding: 30px;
+    margin-left: 15px; }
+    .contactInfo li {
+      display: flex;
+      margin-top: 15px; }
+      .contactInfo li i {
+        font-size: 1.7em; }
+      .contactInfo li p {
+        margin-left: 10px; } }
+
+.regFormRow {
+  width: 100%;
+  padding: 10px;
+  margin-left: 0;
+  margin-right: 0; }
+  .regFormRow .formPic {
+    max-width: 100%; }
