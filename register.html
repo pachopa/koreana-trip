@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="public\styles\styles.css">
 
-
+  <script src="public/src/mainFuns.js"></script>
 </head>
 
 <body>
@@ -108,7 +108,7 @@
               <div class="col-md-6 mb-5 md-form">
                 <label for="email">Email </label>
                 <input type="text" class="form-control" name="email" placeholder=Email required>
-                <div class="feedback">Type at least 2 characters</div>
+                <div class="feedback">Type validation Email</div>
               </div>
 
             </div>
@@ -141,8 +141,8 @@
               </div>
             </div> -->
             <div class="buttonArea">
-              <input onclick="confirm('Are you sure you want to proceed?')" type="reset" value="reset" />
-              <input onclick="confirm('Are you sure you want to proceed?')" type="submit" value="submit" />
+              <input onclick="return confirmMsg()" type="reset" value="reset" />
+              <input onclick="return confirmMsg()" type="submit" value="submit" />
             </div>
 
 

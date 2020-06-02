@@ -35,6 +35,7 @@ function listPics() {
 }
 
 function confirmMsg() {
+  console.log("chris")
   //confirm message function
   let confirmation = confirm("Are you sure you want to proceed?");
   if (!confirmation) {
