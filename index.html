@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="public\styles\styles.css">
 
-
+  <script src="public/src/mainFuns.js"></script>
 </head>
 
 <body>
@@ -145,6 +145,24 @@
       </a>
     </div>
   </div>
+  <div class="localPicGallery">
+    <div class="container-fluid">
+      <div class="row galleryRow">
+        <div class="col-md-6">
+          <img id="displayImage" class="localImg" src="./img/Busan.jpg" onclick="openWindow()" />
+        </div>
+        <div class="col-md-6">
+          <ul class="desLists">
+            <h1>Dream your next trip </h1>
+            <h5>Click the picture to have more info</h5>
+            <script>
+              listPics();
+            </script>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="page-footer font-small blue">
@@ -163,6 +181,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="public/src/app.js"></script>
 </body>
 
 </html>
