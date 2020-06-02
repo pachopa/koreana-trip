@@ -76,6 +76,13 @@
 .regFormRow .feedback {
   display: none; }
 
+.regFormRow .md-form {
+  margin-top: 20px;
+  height: 60px; }
+
+.regFormRow input {
+  margin-top: 20px; }
+
 @media (min-width: 768px) {
   .regFormRow {
     width: 100%;
@@ -89,7 +96,8 @@
     .regFormRow .regButton {
       margin-top: 10px; }
     .regFormRow .md-form {
-      margin-top: 20px; }
+      margin-top: 20px;
+      height: 80px; }
     .regFormRow .buttonArea {
       margin-left: 15px;
       display: inline-block;

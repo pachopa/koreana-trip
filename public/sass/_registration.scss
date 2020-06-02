@@ -5,6 +5,13 @@
   .feedback {
     display: none;
   }
+  .md-form {
+    margin-top: 20px;
+    height: 60px;
+  }
+  input {
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -24,6 +31,7 @@
 
     .md-form {
       margin-top: 20px;
+      height: 80px;
     }
     .buttonArea {
       margin-left: 15px;
